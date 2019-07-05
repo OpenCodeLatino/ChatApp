@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/media_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginLeft="10dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#fff"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/roomTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="5dp"
+                android:text="Viral Android"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/roomDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/roomTitle"
+                android:text="Free android tutorials and examples for beginners and expert."
+                android:textColor="#8b8b8b" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

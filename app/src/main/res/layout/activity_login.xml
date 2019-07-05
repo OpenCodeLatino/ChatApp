@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_chat_black_24dp" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginImage"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Welcome to Chat Rooms "
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/round_bg"
+        android:drawableStart="@drawable/ic_google"
+        android:drawableLeft="@drawable/ic_google"
+        android:text="Login with Google" />
+
+    <Button
+        android:id="@+id/buttonFacebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonGoogleLogin"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/round_facebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:drawablePadding="2dip"
+        android:paddingLeft="15dip"
+        android:text="Login with Facebook"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>
